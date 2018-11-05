@@ -1,24 +1,24 @@
 {
-    "compilerOptions": {
-      "target": "es6",
-      "module": "commonjs",
-      "outDir": "dist",
-      "sourceMap": true,
-      "watch": true,
-      "lib": [
-        "es2017",
-        "dom",
-        "esnext.asynciterable"
-      ],
-    },
-    "files": [
-      "./node_modules/@types/mocha/index.d.ts",
-      "./node_modules/@types/node/index.d.ts"
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "dist",
+    "sourceMap": true,
+    "watch": true,
+    "lib": [
+      "es2017",
+      "dom",
+      "esnext.asynciterable"
     ],
-    "include": [
-      "src/**/*.ts"
-    ],
-    "exclude": [
-      "node_modules"
-    ]
-  }
+  },
+  "files": [
+    "./node_modules/@types/mocha/index.d.ts",
+    "./node_modules/@types/node/index.d.ts"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
