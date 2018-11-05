@@ -11,7 +11,7 @@ class GraphYoga {
             product(id: Int): City
             products: [City]
             person_name(name: String): Person
-            persons_gender(gender: String): Person
+            persons_gender(gender: String): [Person]
             persons: [Person]
         }
         type City {
@@ -39,7 +39,7 @@ class GraphYoga {
                 return db.default.persons.find((e) => e.name === name)
             },
             persons_gender: (_, { gender }) => {
-                return db.default.persons.find((e) => e.gender === gender)
+                return db.default.persons.filter((e) => e.gender === gender)
             },
             persons: () => {
                 return db.default.persons
